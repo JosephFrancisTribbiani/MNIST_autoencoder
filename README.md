@@ -62,6 +62,6 @@ Non-trainable params: 0
 Смещая латентное представление одной цифры к латентному представлению другой, можно получить промежуточные варианты. На изображениях ниже представлено несколько вариантов.
 Первая строка - реконструированные изображения, вторая - исходные изображения.
 
-<img src='https://github.com/JosephFrancisTribbiani/MNIST_autoencoder/blob/main/images/homotopy_1.png'></img>
-<img src='https://github.com/JosephFrancisTribbiani/MNIST_autoencoder/blob/main/images/homotopy_2.png'></img>
+<img src='https://github.com/JosephFrancisTribbiani/MNIST_autoencoder/blob/main/images/homotopy_1.png'></img>  
+<img src='https://github.com/JosephFrancisTribbiani/MNIST_autoencoder/blob/main/images/homotopy_2.png'></img>  
 <img src='https://github.com/JosephFrancisTribbiani/MNIST_autoencoder/blob/main/images/homotopy_3.png'></img>
