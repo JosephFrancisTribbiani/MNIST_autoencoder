@@ -39,3 +39,7 @@ Total params: 194,499
 Trainable params: 194,499  
 Non-trainable params: 0  
 
+На первой итерации модель обучалась на 80-ти эпохах с изменяемым Learning Rate.  
+Графики изменения Learning Rate и Loss на тренировочной и тестовой выборках представлены ниже.
+
+<img src='https://github.com/JosephFrancisTribbiani/MNIST_autoencoder/blob/main/images/param_1.png'></img>
