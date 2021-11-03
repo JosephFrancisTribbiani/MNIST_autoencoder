@@ -46,8 +46,8 @@ Non-trainable params: 0
 
 Наименьшее значения Loss на тестовой выборке составило **0.0025443262532174873**
 
-Далее модель была дообучена также на 80-ти эпохах с изменяемым Learning Rate. При этом, к тренировочной выборке была применена аугментация. А именно RandomPerspective с параметрами distortion_scale=0.4 и p=0.5, а также RandomRotation с параметром degrees=(-10, 10).  
-Графики изменения Learning Rate и Loss на тренировочной и тестовой выборках представлены ниже.
+Далее модель была дообучена также на 80-ти эпохах с изменяемым `Learning Rate`. При этом, к тренировочной выборке была применена аугментация. А именно `RandomPerspective` с параметрами `distortion_scale=0.4` и `p=0.5`, а также `RandomRotation` с параметром `degrees=(-10, 10)`.  
+Графики изменения `Learning Rate` и `Loss` на тренировочной и тестовой выборках представлены ниже.
 
 <img src='https://github.com/JosephFrancisTribbiani/MNIST_autoencoder/blob/main/images/param_2.png'></img>
 
