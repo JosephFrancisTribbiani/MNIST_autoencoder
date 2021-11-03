@@ -2,7 +2,7 @@
 Архитектура автоэнкодера схематично ихображена на рисунке ниже. 
 <img src='https://github.com/JosephFrancisTribbiani/MNIST_autoencoder/blob/main/images/architecture.png'></img>
 
-Более подробно архитектуру можно представить с помощью torchsummary:
+На вход подается изображение из датасета MNIST размера (1, 28, 28). Более подробно архитектуру можно представить с помощью torchsummary:
 
 |Layer (type)|Output Shape|Param|
 |---|---|---|
@@ -34,3 +34,8 @@
 |ConvTranspose2d-26|[-1, 1, 28, 28]|145|
 |BatchNorm2d-27|[-1, 1, 28, 28]|2|
 |ELU-28|[-1, 1, 28, 28]|0|
+
+Total params: 194,499  
+Trainable params: 194,499  
+Non-trainable params: 0  
+
