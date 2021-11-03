@@ -43,3 +43,25 @@ Non-trainable params: 0
 Графики изменения Learning Rate и Loss на тренировочной и тестовой выборках представлены ниже.
 
 <img src='https://github.com/JosephFrancisTribbiani/MNIST_autoencoder/blob/main/images/param_1.png'></img>
+
+Наименьшее значения Loss на тестовой выборке составило 0.0025443262532174873
+
+Далее модель была дообучена также на 80-ти эпохах с изменяемым Learning Rate. При этом, к тренировочной выборке была применена аугментация. А именно RandomPerspective с параметрами distortion_scale=0.4 и p=0.5, а также RandomRotation с параметром degrees=(-10, 10).  
+Графики изменения Learning Rate и Loss на тренировочной и тестовой выборках представлены ниже.
+
+<img src='https://github.com/JosephFrancisTribbiani/MNIST_autoencoder/blob/main/images/param_2.png'></img>
+
+Наименьшее значения Loss на тестовой выборке составило 0.0023033211376672735
+
+### Результаты
+
+На вход уже обученной сети были переданы 32 изображения из тестового датасета MNIST. На картинке ниже представлен выход сети. Первая строка - исходные изображения, вторая - реконструированные.
+
+<img src='https://github.com/JosephFrancisTribbiani/MNIST_autoencoder/blob/main/images/reconstructed.png'></img>
+
+Смещая латентное представление одной цифры к латентному представлению другой, можно получить промежуточные варианты. На изображениях ниже представлено несколько вариантов.
+Первая строка - реконструированные изображения, вторая - исходные изображения.
+
+<img src='https://github.com/JosephFrancisTribbiani/MNIST_autoencoder/blob/main/images/homotopy_1.png'></img>
+<img src='https://github.com/JosephFrancisTribbiani/MNIST_autoencoder/blob/main/images/homotopy_2.png'></img>
+<img src='https://github.com/JosephFrancisTribbiani/MNIST_autoencoder/blob/main/images/homotopy_3.png'></img>
