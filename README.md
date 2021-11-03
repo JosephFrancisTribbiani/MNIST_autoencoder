@@ -2,7 +2,7 @@
 Архитектура автоэнкодера схематично ихображена на рисунке ниже. 
 <img src='https://github.com/JosephFrancisTribbiani/MNIST_autoencoder/blob/main/images/architecture.png'></img>
 
-На вход подается изображение из датасета MNIST размера (1, 28, 28). Более подробно архитектуру можно представить с помощью torchsummary:
+На вход подается изображение из датасета MNIST размера (1, 28, 28). Более подробно архитектуру можно представить с помощью `torchsummary`:
 
 |Layer (type)|Output Shape|Param|
 |---|---|---|
@@ -39,19 +39,19 @@ Total params: 194,499
 Trainable params: 194,499  
 Non-trainable params: 0  
 
-На первой итерации модель обучалась на 80-ти эпохах с изменяемым Learning Rate.  
-Графики изменения Learning Rate и Loss на тренировочной и тестовой выборках представлены ниже.
+На первой итерации модель обучалась на 80-ти эпохах с изменяемым `Learning Rate`.  
+Графики изменения `Learning Rate` и `Loss` на тренировочной и тестовой выборках представлены ниже.
 
 <img src='https://github.com/JosephFrancisTribbiani/MNIST_autoencoder/blob/main/images/param_1.png'></img>
 
-Наименьшее значения Loss на тестовой выборке составило 0.0025443262532174873
+Наименьшее значения Loss на тестовой выборке составило **0.0025443262532174873**
 
 Далее модель была дообучена также на 80-ти эпохах с изменяемым Learning Rate. При этом, к тренировочной выборке была применена аугментация. А именно RandomPerspective с параметрами distortion_scale=0.4 и p=0.5, а также RandomRotation с параметром degrees=(-10, 10).  
 Графики изменения Learning Rate и Loss на тренировочной и тестовой выборках представлены ниже.
 
 <img src='https://github.com/JosephFrancisTribbiani/MNIST_autoencoder/blob/main/images/param_2.png'></img>
 
-Наименьшее значения Loss на тестовой выборке составило 0.0023033211376672735
+Наименьшее значения Loss на тестовой выборке составило **0.0023033211376672735**
 
 ### Результаты
 
