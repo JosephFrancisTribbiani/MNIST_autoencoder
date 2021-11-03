@@ -5,5 +5,5 @@
 Более подробно архитектуру можно представить с помощью torchsummary:
 
 --
-Layer (type)    Output Shape    Param #
+! Layer (type)    Output Shape    Param
 --
